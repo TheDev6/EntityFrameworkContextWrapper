@@ -62,7 +62,7 @@
         }
 
         [Fact]
-        public void Call_Void()
+        public void Call_Void_()
         {
             var sut = new DbContextWrapper<MyEfWrapperDbContext>();
             MyEfWrapperDbContext context = null;
@@ -123,7 +123,7 @@
         }
 
         [Fact]
-        public async void CallAsync_Void()
+        public async void CallAsync_Void_()
         {
             var sut = new DbContextWrapper<MyEfWrapperDbContext>();
             MyEfWrapperDbContext context = null;
