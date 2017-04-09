@@ -1,20 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
-    <metadata>
-        <id>EntityFrameworkContextWrapper</id>
-        <version>1.1.0</version>
-        <title>Entity Framework Context Wrapper</title>
-        <authors>TheDev6</authors>
-        <projectUrl>https://github.com/TheDev6/EntityFrameworkContextWrapper</projectUrl>
-        <iconUrl>https://dev6.blob.core.windows.net/blog-images/db-wrapper.jpg</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Wraps calls to EF Context in a using statement for easier disposing. This code can also help to isolate the use of Entity Framework in unit tests because it gives one more level of interface mocking before having to directly deal with EF in unit tests.</description>
-        <language />
-        <tags>Entity Framework Context Wrapper</tags>
-        <dependencies>
-            <group targetFramework=".NETFramework4.5.1">
-                <dependency id="EntityFramework" version="6.1.3" />
-            </group>
-        </dependencies>
-    </metadata>
+  <metadata>
+    <id>EntityFrameworkContextWrapper</id>
+    <version>1.1.0</version>
+    <title>Entity Framework Context Wrapper</title>
+    <authors>TheDev6</authors>
+    <projectUrl>https://github.com/TheDev6/EntityFrameworkContextWrapper</projectUrl>
+    <iconUrl>https://dev6.blob.core.windows.net/blog-images/db-wrapper.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wraps calls to EF Context in a using statement for easier disposing. This code can also help to isolate the use of Entity Framework in unit tests because it gives one more level of interface mocking before having to directly deal with EF in unit tests.</description>
+    <summary>
+      This library helps in avoiding newing up a context within a using statement by wrapping it. It can help with unit testing to further isolate the context. It also has helper methods for calling stored procedures.
+    </summary>
+    <language />
+    <tags>EntityFramework EfContextWrapper</tags>
+    <dependencies>
+      <group>
+        <dependency id="EntityFramework" version="6.1.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\EntityFrameworkContextWrapper.dll" target="lib" />
+    <file src="bin\release\EntityFrameworkContextWrapper.pdb" target="lib" />
+  </files>
 </package>
